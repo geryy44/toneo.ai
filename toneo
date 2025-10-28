@@ -1,0 +1,42 @@
+module.exports = {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {}
+  }
+}
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./pages/**/*.{js,jsx}",
+    "./components/**/*.{js,jsx}"
+  ],
+  theme: {
+    extend: {
+      colors: {
+        toneoBlue: "#0b6cff",
+        toneoPurple: "#7c3aed"
+      }
+    }
+  },
+  plugins: []
+}
+{
+  "name": "toneo-landing",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "14.2.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24",
+    "tailwindcss": "^3.4.7"
+  }
+}
